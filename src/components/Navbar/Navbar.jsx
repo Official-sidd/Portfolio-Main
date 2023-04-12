@@ -6,7 +6,10 @@ const Navbar = () => {
   return (
     <div className='n-wrapper'>
         <div className='n-left'>
-            <div className='n-name'>Siddharth</div>
+
+            <img src={Avatar} className='n-img'>
+            </img>
+  
         </div>
     <div className='n-right'>
         <div className='n-list'>

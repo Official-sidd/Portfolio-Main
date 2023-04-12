@@ -5,7 +5,7 @@ import Css from '../../img/css.png'
 import Js from '../../img/js.png'
 import react from '../../img/react.png'
 import Figma from '../../img/figma.png'
-
+import { motion } from "framer-motion"
 
 const Skills = () => {
   return (
@@ -22,7 +22,13 @@ const Skills = () => {
             
         </div>
         <div className='w-right'>
-           <div className='mainCircle'>
+           <motion.div           
+            initial={{rotate:45}}
+            whileInView={{rotate:0}}
+            viewport={{margin:'-40px'}}
+            transition={{duration:3.5,type:'spring'}}
+            
+            className='mainCircle'>
                 <div className='secCircle'>
                 <img src={Html} alt='' height='100px'></img> 
                 </div>
@@ -38,7 +44,7 @@ const Skills = () => {
                 <div className='secCircle'>
                 <img src={Figma} alt='' height='100px'></img> 
                 </div>
-           </div> 
+           </motion.div> 
            <div className='w-backCircle blueCircle'></div>
            <div className='w-backCircle yellowCircle'></div>
         </div>
