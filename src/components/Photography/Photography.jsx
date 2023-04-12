@@ -5,7 +5,7 @@ import 'swiper/css';
 
 const Photography = () => {
   return (
-    <div className='photography'>
+    <div className='photography' id='photography'>
       
       <div className='ph-align'>
         <span>Some </span>

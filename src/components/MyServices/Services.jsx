@@ -10,7 +10,7 @@ import { motion } from "framer-motion"
 const Services = () => {
   const transition ={duration:1,type:'spring'}
   return (
-    <div className='services' id='service'>
+    <div className='services' id='services'>
         <div className='s-title'>
             <span>My</span>
             <span>Services</span>

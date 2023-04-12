@@ -10,8 +10,14 @@ import thumbup from '../../img/thumbup.png'
 import Crown from '../../img/crown.png'
 import FloatingDiv from '../FloatingDiv/FloatingDiv'
 import { motion } from "framer-motion"
+import { HashLink as Link } from 'react-router-hash-link';
 
 const Intro = () => {
+    const buttonStyle={
+        margin: "0.5rem",
+        textDecoration: "none",
+        color: 'white'
+    }
 
     const transition ={duration:3,type:'spring'}
 
@@ -23,7 +29,7 @@ const Intro = () => {
                 <span>Siddharth Bhattacharjee</span>
                 <span>Frontend Developer, UI/UX Designer And Photographer</span>
             </div>
-            <button className='button i-button'>Hire Me</button>
+            {/* <Link to='#contact' smooth style={buttonStyle}><button className='button i-button'>Hire me</button></Link> */}
             <div className='i-icons'>
                 <a href='https://github.com/Official-sidd' target='_blank'>
                 <img src={Github} alt=''></img>
