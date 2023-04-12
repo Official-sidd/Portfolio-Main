@@ -8,7 +8,7 @@ import { motion } from "framer-motion"
 
 const Certificates = () => {
   return (
-    <div className='c-wrapper'>
+    <div className='c-wrapper' id='certificates'>
          <motion.div 
          initial={{rotate:20}}
          whileInView={{rotate:0}}

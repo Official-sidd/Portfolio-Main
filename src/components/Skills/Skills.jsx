@@ -6,17 +6,18 @@ import Js from '../../img/js.png'
 import react from '../../img/react.png'
 import Figma from '../../img/figma.png'
 import { motion } from "framer-motion"
+import { HashLink as Link } from 'react-router-hash-link';
 
 const Skills = () => {
   return (
-    <div className='skills'>
+    <div className='skills' id='skills'>
         <div className='s-title'>
             <span>My</span>
             <span>Skills</span>
             <span>I am familiar with HTML CSS Js React Bootstrap 
             <br/> Material-UI and also designing UI pages on Figma.</span>
 
-            <button className='button s-button'>Hire  Me</button>
+            <Link to='#contact' smooth><button className='button s-button'>Contact</button></Link>
 
             <div className='blur s-blur1' style={{background: "#ABF1FF94"}}></div>
             
