@@ -4,7 +4,13 @@
     height: 90vh;
     margin-top: 3rem;
 }
-
+.sk.title{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        flex: 1;
+        top: 3rem;
+}
 .w-right{
     position: relative;
     flex: 1;
@@ -77,4 +83,33 @@
     background: #F5C32C;
     left:18rem;
     top:8rem
+}
+@media(max-width:400px){
+    .skills{
+        width: 100%;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        height: 90vh;
+        margin-top: 0;
+        /* margin-bottom: 2rem; */
+    }
+    .w-right{
+        position: static;   
+        transform: scale(0.7);
+    }
+    .mainCircle{
+        /* transform: scale(0.4); */
+        left: -10%;
+        top: 0;
+    }
+    .blur{
+        display: none;
+    }
+    .blueCircle{
+        display: none;
+    }
+    .yellowCircle{
+       display: none;
+    }
 }

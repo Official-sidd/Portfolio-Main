@@ -6,6 +6,9 @@
     margin-top: 9rem;
     margin-bottom: 13rem;
 }
+.s-title>a{
+    width: fit-content;
+}
 .s-title{
     display: flex;
     flex-direction: column;
@@ -50,4 +53,40 @@
 .s-blur1{
     top: 13rem;
     left: -18rem;
+}
+@media(max-width:400px){
+    .services{
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .s-title{
+        /* display: flex;
+        flex-direction: column; */
+        /* height: 200px; */
+        height: 20vh;
+        /* top: 0; */
+    }
+    .s-cards{
+        display: flex;
+        flex-direction: column;
+        transform: scale(0.5);
+        top: -15%;
+        left: -12%;
+    }
+    .service-card{
+        position: relative;
+       
+    }
+    .s-cards>*{
+        position: relative;
+    }
+    .s-blur2{
+       display: none;
+    }
+    .s-blur1{
+        display: none;
+    }
 }

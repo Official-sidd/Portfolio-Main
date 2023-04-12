@@ -1,6 +1,8 @@
 .projects-area{
     display: flex;
     flex-direction: column;
+    margin-top: 4rem;
+    /* background-color: aqua; */
 }
 .proj-wrapper{
     display: grid;
@@ -27,4 +29,9 @@
     color: var(--orange);
     font-size: 3rem;
     font-weight: bold;
+}
+@media(max-width:400px){
+    .projects-area{
+       padding-bottom: 1rem;
+    }
 }

@@ -1,15 +1,57 @@
+/* .contact-form{
+    display: flex;
+}
+
+.c-right {
+    border: 1px solid red;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.c-left{
+    border: 1px solid blue;
+    width: 50%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.c-left span{
+    width: 100%;
+    text-align: center;
+} */
+@media(max-width:400px){
+    .contact-form{
+        display: flex;
+        flex-direction: column;
+        /* background-color: blueviolet; */
+        margin-top: 0 !important;
+        padding-bottom: 3rem !important;
+    }
+    .blur{
+        display: none;
+    }
+    .c-right .user{
+        /* background-color: red; */
+        width: 12rem !important;
+    }
+}
+
 .contact-form{
     padding: 0 3rem 0 3rem;
     display: flex;
-    padding: 3rem;
-    height: 80vh;
+    /* flex-wrap: wrap; */
+    /* height: 80vh; */
     margin-top: 6rem;
+    padding-bottom: 3rem;
+
 }
 .c-left{
     flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    text-align: center;
     padding-top: 5rem;
 }
 .c-left>:nth-child(1){
@@ -24,10 +66,13 @@
     font-weight: bold;
 }
 .c-right{
-    display: flex;
+    /* display: flex; */
     justify-content: center;
+    top: 50%;
     position: relative;
     flex: 1;
+    align-self: center;
+    justify-self: center;
 }
 .c-right>form{
     display: flex;
@@ -41,21 +86,35 @@
     border-radius: 8px;
     width: 20rem;
     height: 2rem;
-    padding: 0.3em;
+    padding: 0 0.5rem ;
     outline: none;
     align-self: center;
-    padding: 0.5rem;
+    /* padding: 0.5rem; */
     font-size: 16px;
     /* color: var(--black); */
 }
 textarea{
     height: 4rem !important;
+    padding-top: 0.5rem !important;
 }
 .f-button{
     width: 40%;
     align-self: center;
 }
-/* .c-blur{
-    top:1rem;
-    left: 8rem;
-} */
+ /* @media(max-width:400px){
+    .contact-form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .c-right{
+        background-color: red;
+    }
+    .c-right .user{
+        width: 3rem;
+        align-items: center;
+        justify-content: center;
+        
+    }
+}  */

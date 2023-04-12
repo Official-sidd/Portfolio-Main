@@ -3,10 +3,10 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 110vh;
+    height: fit-content;
 }
 .style{
-    width: 20%;
+    width: fit-content;
 }
 
 .photography>span{
@@ -47,4 +47,31 @@
     /* z-index: 20; */
     margin-top: 1rem;
     width: 100%;
+}
+@media(max-width:400px){
+    .photography{
+        /* position: static; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 2rem !important;
+        /* height: fit-content; */
+        /* background-color: aquamarine; */
+    }
+    .photography-slider .swiper-slide{
+        width: 100%;
+    }
+    .photography img{
+        width: 8rem;
+        filter: drop-shadow(-12px 15px 13px rgba(0, 0, 0,0.25));
+        border-radius: 19px;
+    }
+    .ph-button{
+        /* z-index: 20; */
+        margin-top: 1rem;
+        width: 100%;
+    }
+    .swiper-wrapper{
+        display: none !important;
+    }
 }

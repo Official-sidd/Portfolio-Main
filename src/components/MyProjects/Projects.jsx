@@ -8,7 +8,7 @@ return (
   <div className='projects-area' id='projects'>
   {/* <div className='blur' style={{background: '#ABF1FF94',position:'relative',left:'-20%'}}></div> */}
     <div className='proj-headers'>
-      <span>Some Recent</span>
+      <span>Recent</span>
       <span>Projects</span>
     </div>
 
