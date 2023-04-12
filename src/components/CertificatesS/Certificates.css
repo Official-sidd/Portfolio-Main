@@ -1,0 +1,51 @@
+.c-wrapper{
+    display: flex;
+    height: 120vh;
+}
+.btn{
+    width: 50%;
+}
+.c-heading{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    align-self: center;
+    position: relative;
+    top: -3rem;
+}
+.c-cards{
+    flex: 1;
+}
+.c-cards>:nth-child(1){
+    position: relative;
+    top: 5rem;
+}
+.c-cards>:nth-child(2){
+    position: relative;
+    left: 16rem;
+    top: -14rem;
+}
+.c-cards>:nth-child(3){
+    position: relative;
+    top: -13rem;
+    left: 17rem;
+}
+
+.c-heading>span:nth-child(1){
+    color: var(--black);
+    font-weight: bold;
+    font-size: 2rem;
+}
+.c-heading>span:nth-child(2){
+    color: var(--orange);
+    font-weight: bold;
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+.c-heading>span:nth-child(3){
+    color: var(--gray);
+    font-size: 14px;
+}
+.ce-button{width: 100%;margin-top: 1rem;}
+

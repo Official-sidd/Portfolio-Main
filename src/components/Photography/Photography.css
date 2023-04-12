@@ -1,0 +1,50 @@
+.photography{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 110vh;
+}
+.style{
+    width: 20%;
+}
+
+.photography>span{
+    font-weight: 100;
+    font-size: 14px;
+    color: var(--gray);
+    margin-top: 10px;
+}
+.ph-align>span:nth-of-type(1){
+    color: var(--black);
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+.ph-align>span:nth-of-type(2){
+    color: var(--orange);
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+.photography .swiper{
+    overflow: visible !important;
+}
+
+.photography-slider{
+    margin-top: 3rem;
+    width: 100%;
+}
+
+.photography-slider .swiper-slide{
+    width: 20rem;
+}
+.photography img{
+    width: 10rem;
+    filter: drop-shadow(-12px 15px 13px rgba(0, 0, 0,0.25));
+    border-radius: 19px;
+}
+
+.ph-button{
+    /* z-index: 20; */
+    margin-top: 1rem;
+    width: 100%;
+}

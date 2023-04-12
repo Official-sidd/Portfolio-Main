@@ -1,0 +1,22 @@
+.cert-card{
+    width: 13rem;
+    height: 13rem;
+    position: absolute;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.26);
+    border: 7px solid var(--orangeCard);
+    box-shadow: var(--boxShadow);
+    border-radius: 20px;
+    padding:10px;
+}
+.cert-card:hover{
+        transform: scale(1.04);
+        box-shadow: 5px 2.5px 5px 1.5px rgba(0, 0, 0, 0.1);
+        transition: 0.2s;
+}
+.cert-image{
+    width: 100%;
+}
