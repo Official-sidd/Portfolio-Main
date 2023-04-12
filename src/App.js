@@ -8,7 +8,6 @@ import Skills from "./components/Skills/Skills";
 import Photography from "./components/Photography/Photography";
 import Certificates from "./components/CertificatesS/Certificates";
 import Contacts from "./components/Contact/Contacts";
-import Footer from "./components/Footer/Footer";
 
 function App() {
   return (

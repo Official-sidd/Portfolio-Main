@@ -1,6 +1,7 @@
 .c-wrapper{
     display: flex;
     height: 120vh;
+    margin-top: 5rem;
 }
 .btn{
     width: 50%;

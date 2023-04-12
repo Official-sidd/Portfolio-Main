@@ -9,8 +9,12 @@ import Me from '../../img/Me.png'
 import thumbup from '../../img/thumbup.png'
 import Crown from '../../img/crown.png'
 import FloatingDiv from '../FloatingDiv/FloatingDiv'
+import { motion } from "framer-motion"
 
 const Intro = () => {
+
+    const transition ={duration:3,type:'spring'}
+
   return (
     <div className='intro'>
         <div className='i-left'>
@@ -38,12 +42,23 @@ const Intro = () => {
             <img src={Vector2} alt=''></img>
             {/* <img src={potrait} alt=''></img> */}
             <img src={Me} alt=''></img>
-            <div style={{top:'-4%',left:'68%'}}>
+
+            <motion.div           
+            initial={{top:'-4%',left:'80%'}}
+            whileInView={{left:'68%'}}
+            transition={{transition}}
+
+            style={{top:'-4%',left:'68%'}}>
                 <FloatingDiv image={Crown} txt1="Web" txt2="Developer"/>
-            </div>
-            <div style={{top:'18rem',left:'-2rem'}}>
+            </motion.div>
+            <motion.div           
+            initial={{top:'18rem',left:'9rem'}}
+            whileInView={{left:'0rem'}}
+            transition={{transition}} 
+            
+                 style={{top:'18rem',left:'-2rem'}}>
                 <FloatingDiv image={thumbup} txt1='UI/UX' txt2='Designer'/>
-            </div>
+            </motion.div>
             {/* blurdiv */}
             <div className='blur' style={{backgroundColor: "rgb(238 210 255)"}}></div>
             <div className='blur' style={{background:'#C1F5FF',top:'17rem',width:'21rem',height:'11rem',left:'-9rem'}}></div>

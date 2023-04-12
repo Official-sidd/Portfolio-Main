@@ -10,11 +10,17 @@
     display: flex;
     gap: 2rem;
 }
-
-.n-name{
+.n-img{
+    /* background-image: url('../../img/avatar.png'); */
+    height: 50px;
+    /* padding: 2rem; */
+    margin: 3rem;
+    /* background-size: cover; */
+}
+/* .n-name{
     font-size: 1.3rem;
     font-weight: bold ;
-}
+} */
 
 .n-right{
     display: flex;
