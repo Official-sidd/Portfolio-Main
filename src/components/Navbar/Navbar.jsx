@@ -27,11 +27,12 @@ const Navbar = () => {
     <div className='n-right'>
         <div className='n-list'>
             <ul style={{listStyleType:'none'}}>
-                <li><Link to='#services' smooth style={linkStyle}>Services</Link></li>
+                <li><Link to='#services' className='links' smooth style={linkStyle}>Services</Link></li>
                 <li><Link to='#skills' smooth style={linkStyle}>Skills</Link></li>
                 <li><Link to='#certificates' smooth style={linkStyle}>Certificates</Link></li>
                 <li><Link to='#photography' smooth style={linkStyle}>Photography</Link></li>
                 <li><Link to='#projects' smooth style={linkStyle}>Projects</Link></li>
+                <li><a href='https://semicolonblog.netlify.app/' style={linkStyle} target='_blank' >Blog</a></li>
             </ul>
         </div>
        

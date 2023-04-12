@@ -9,11 +9,12 @@ import { motion } from "framer-motion"
 const Certificates = () => {
   return (
     <div className='c-wrapper' id='certificates'>
+     
          <motion.div 
          initial={{rotate:20}}
          whileInView={{rotate:0}}
          viewport={'-40px'}
-         transition={{duration:2,type:'spring'}} className='c-cards'>
+         transition={{duration:4,type:'spring'}} className='c-cards'>
           
            <CertCard image={certificate1} ></CertCard>
            
@@ -21,6 +22,7 @@ const Certificates = () => {
            
            <CertCard image={certificate3} ></CertCard>
         </motion.div>
+       
         <div className='blur s-blur1' style={{background: 'var(--purple)',position:'relative',top:'70%',left:'56%'}}></div>
 
         <div className='c-heading'>

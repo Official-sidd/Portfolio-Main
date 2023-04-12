@@ -22,13 +22,14 @@ const Services = () => {
             </a>
             <div className='blur s-blur1' style={{background: "#ABF1FF94"}}></div>
         </div>
+        {/* style={{left:'14rem'}} */}
         <div className='s-cards'>
            <motion.div 
            initial={{left:'25%'}}
            whileInView={{left:'14rem'}}
            transition={{transition}}
-
-           style={{left:'14rem'}}>
+          className='service-card'
+           >
             <Card
                 emoji={Heartemoji}
                 heading = {"UI/UX"}
@@ -39,7 +40,7 @@ const Services = () => {
            initial={{left:'25%'}}
            whileInView={{top:'12rem',left:'-4rem'}}
            transition={{transition}}
-
+           className='service-card'
              style={{top:'12rem',left:'-4rem'}}>
             <Card
                 emoji={Glasses}
@@ -51,7 +52,7 @@ const Services = () => {
            initial={{left:'25%'}}
            whileInView={{top:'19rem',left:'12rem'}}
            transition={{transition}}
-
+           className='service-card'
              style={{top:'19rem',left:'12rem'}}>
             <Card
                 emoji={Humble}

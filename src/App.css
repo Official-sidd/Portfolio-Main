@@ -33,3 +33,15 @@
   color: var(--orange);
   border: 1px solid var(--orange);
 } 
+*::-webkit-scrollbar{
+  display: none;
+}
+
+
+@media(max-width:400px){
+  .App{
+    padding: 0 2rem ;
+    overflow: hidden;
+    color: var(--black);    
+}
+}

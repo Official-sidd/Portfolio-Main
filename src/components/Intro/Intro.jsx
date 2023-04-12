@@ -13,11 +13,6 @@ import { motion } from "framer-motion"
 import { HashLink as Link } from 'react-router-hash-link';
 
 const Intro = () => {
-    const buttonStyle={
-        margin: "0.5rem",
-        textDecoration: "none",
-        color: 'white'
-    }
 
     const transition ={duration:3,type:'spring'}
 
@@ -53,16 +48,18 @@ const Intro = () => {
             initial={{top:'-4%',left:'80%'}}
             whileInView={{left:'68%'}}
             transition={{transition}}
+            style={{top:'-4%',left:'68%'}}
+            className='float1'>
 
-            style={{top:'-4%',left:'68%'}}>
                 <FloatingDiv image={Crown} txt1="Web" txt2="Developer"/>
             </motion.div>
             <motion.div           
             initial={{top:'18rem',left:'9rem'}}
             whileInView={{left:'0rem'}}
             transition={{transition}} 
-            
-                 style={{top:'18rem',left:'-2rem'}}>
+            className='float1'
+            style={{top:'18rem',left:'-2rem'}}>
+                
                 <FloatingDiv image={thumbup} txt1='UI/UX' txt2='Designer'/>
             </motion.div>
             {/* blurdiv */}
